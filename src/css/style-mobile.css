@@ -203,7 +203,7 @@
 .row {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    max-width: 400px;
 }
 
 .card {
