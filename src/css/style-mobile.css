@@ -336,6 +336,16 @@
         margin-bottom: 0px;
     }
 
+    .product-ref {
+        margin-top: 0;
+    }
+
+    .product-ref-text {
+        color: #00a2d1;
+        font-size: 12px;
+        margin: 5px 0 0 0;
+    }
+
     .container-rating-products {
         color: #ffc812;
         
