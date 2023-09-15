@@ -209,8 +209,9 @@
 }
 
 .card {
-    background: linear-gradient(70deg, #e5eaf5, #d0d8e6);
-    border: 1px solid #00a2d1;
+    /*background: linear-gradient(70deg, #e5eaf5, #d0d8e6);*/
+    background-color: white;
+    /*border: 1px solid #00a2d1;*/
     flex: 1;
     margin: 8px;
     box-sizing: border-box;
@@ -223,13 +224,14 @@
     justify-content: center;
     flex-direction: column;
     box-shadow: 6px 10px 15px -3px rgba(0,0,0,0.15);
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 .card img {
     width: 100%;
     height: 100%;
-    border-radius: 14px 14px 15px 15px;
+    /*border-radius: 14px 14px 15px 15px;*/
+    border-radius: 8px;
     box-sizing: border-box;
     filter: opacity(100%); /* Lida com a transparência das imagens [modas] */
 }
