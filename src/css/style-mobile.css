@@ -321,14 +321,18 @@
     .product-content {
         padding: 16px;
     }
+
+    .container-info-product {
+        padding: 20px;
+    }
     
-    .product-title {
+    .product-title { /* A DIV da texto */
         color: #00a2d1;
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 2px;
     }
 
-    .product-tittle-text {
+    .product-tittle-text { /* O texto */
         margin-bottom: 0px;
     }
 
@@ -338,6 +342,27 @@
     }
 
     .rating-products-span-p {
+        margin-top: 0;
+    }
+
+    .container-price {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .reais {
+        color: #151b2f;
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+
+    .centavos {
+        color: #151b2f;
+        font-size: 12px;
+        font-weight: bold;
+        align-items: start;
         margin-top: 0;
     }
     
