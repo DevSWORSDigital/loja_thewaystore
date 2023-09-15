@@ -209,7 +209,8 @@
 }
 
 .card {
-    background-color: #00a2d1;
+    background-color: #e5eaf5;
+    border: 1px solid #00a2d1;
     flex: 1;
     margin: 4px;
     box-sizing: border-box;
@@ -234,7 +235,7 @@
 }
 
 .card p {
-    color: white;
+    color: #00a2d1;
     margin: 10px;
     letter-spacing: 1px;
 }
