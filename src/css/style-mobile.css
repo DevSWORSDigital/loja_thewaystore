@@ -301,7 +301,7 @@
     
     .product {
         flex: 0 0 300px;
-        background-color: #f9f9f9;
+        background-color: #fbfbfb;
         border-radius: 8px;
         /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
         overflow: hidden;
@@ -323,8 +323,22 @@
     }
     
     .product-title {
-        font-size: 18px;
+        color: #00a2d1;
+        font-size: 16px;
         margin-bottom: 10px;
+    }
+
+    .product-tittle-text {
+        margin-bottom: 0px;
+    }
+
+    .container-rating-products {
+        color: #ffc812;
+        
+    }
+
+    .rating-products-span-p {
+        margin-top: 0;
     }
     
     .product-buttons {
