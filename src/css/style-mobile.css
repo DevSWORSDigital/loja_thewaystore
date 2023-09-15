@@ -209,7 +209,7 @@
 }
 
 .card {
-    background-color: black;
+    background-color: #00a2d1;
     flex: 1;
     margin: 4px;
     box-sizing: border-box;
@@ -230,7 +230,7 @@
     height: 100%;
     border-radius: 15px;
     box-sizing: border-box;
-    filter: opacity(80%);
+    filter: opacity(100%); /* Lida com a transparência das imagens [modas] */
 }
 
 .card p {
