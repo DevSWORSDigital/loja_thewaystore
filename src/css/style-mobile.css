@@ -323,7 +323,7 @@
     }
 
     .container-info-product {
-        padding: 20px;
+        padding: 0px 20px 10px 20px;
     }
     
     .product-title { /* A DIV da texto */
@@ -353,7 +353,7 @@
 
     .reais {
         color: #151b2f;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 800;
         margin-top: 10px;
     }
