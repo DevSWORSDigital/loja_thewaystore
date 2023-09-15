@@ -212,10 +212,10 @@
     background-color: #e5eaf5;
     border: 1px solid #00a2d1;
     flex: 1;
-    margin: 4px;
+    margin: 8px;
     box-sizing: border-box;
     text-align: center;
-    padding: 0px;
+    padding: 0;
     height: 100%;
     width: calc(50% - 10px);
     display: flex;
