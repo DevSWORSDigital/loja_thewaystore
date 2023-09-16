@@ -355,10 +355,16 @@
         margin-top: 0;
     }
 
+    .container-preco-antigo-preco-com-desconto {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     .container-price {
         display: flex;
         align-items: center;
-        
+        padding-left: 30px;
     }
 
     .container-preco-antigo {
@@ -366,12 +372,12 @@
     }
 
     .preco-antigo {
-        margin: 0;
+        margin: 10px 0 24px 0;
     }
 
     #linha {
         position: absolute;
-        top: 10px;
+        top: 20px;
         width: 75px;
         height: 1px;
         background-color: black;
