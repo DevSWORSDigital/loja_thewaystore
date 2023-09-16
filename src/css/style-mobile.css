@@ -412,7 +412,7 @@
     }
 
     #cart-icon {
-        width: 25px;
+        width: 20px;
         height: 20px;
         filter: brightness(0) invert(1); /* Aplica o filtro para sobrepor a cor de fundo */
     }
