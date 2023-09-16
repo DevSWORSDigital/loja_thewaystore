@@ -384,12 +384,12 @@
 
     .buy-button {
         background-color: #3498db;
-        width: 50%;
+        width: 70%;
         font-size: 1rem;
         /*letter-spacing: 1px;*/
     }
     .cart-button {
-        width: 50%;
+        width: 30%;
         background-color: #3093d5;
     }
     
