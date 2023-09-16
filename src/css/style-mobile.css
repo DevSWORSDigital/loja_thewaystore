@@ -361,6 +361,26 @@
         
     }
 
+    .container-preco-antigo {
+        position: relative;
+    }
+
+    .preco-antigo {
+        margin: 0;
+    }
+
+    #linha {
+        position: absolute;
+        top: 10px;
+        width: 75px;
+        height: 1px;
+        background-color: black;
+    }
+
+    .reais-preco-antigo > p, .centavos-preco-antigo > p {
+        margin: 0;
+    }
+
     .reais {
         color: #151b2f;
         font-size: 24px;
@@ -418,3 +438,4 @@
         height: 20px;
         filter: brightness(0) invert(1); /* Aplica o filtro para sobrepor a cor de fundo */
     }
+
