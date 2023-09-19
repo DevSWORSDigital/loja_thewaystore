@@ -517,7 +517,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center; /* Se der algum erro em telas maiores, voltar para START essa definição */
     align-items: start;
     flex: 2 0 140px;
     width: 100%;
