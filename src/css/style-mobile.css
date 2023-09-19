@@ -482,6 +482,11 @@ footer {
     flex-wrap: wrap;
 }
 
+.footer-subscribe input.invalid {
+    border: 2px solid red;
+    color: red;
+}
+
 .footer-subscribe > input {
     border: 1px solid #e1e1e1;
     color: #111420;

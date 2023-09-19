@@ -16,6 +16,15 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<style>
+        .invalid {
+            border: 1px solid red;
+        }
+
+        .error-message {
+            color: red;
+        }
+</style>
 </head>
 <body>
     <header>
@@ -324,14 +333,15 @@
                     </p>
                 </div>
                 <div class="footer-subscribe">
-                    <input type="email" name="" id=""
-                        placeholder="Seu e-mail"
+                    <input type="email" name="" id="emailInput"
+                        placeholder="Seu e-mail" 
                     >
-                    <input type="tel" name="" id=""
-                    placeholder="Seu WhatsApp"
+                    <input type="tel" name="" id="whatsappInput"
+                    placeholder="Seu WhatsApp" 
                     >
                     <button type="submit">Enviar</button>
                 </div>
+                <p id="error-message" style="color: red;"></p>
             </section>
             <div class="footer-columns">
                 <section class="footer-logo">
@@ -403,6 +413,97 @@
     <script> // ini: Script que insere o ano nos direitos reservados no Footer -->
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script> <!-- end: Script que insere o ano nos direitos reservados no Footer -->
+    
+    <script> // ini: Script que faz a validação do cadastro de e-mail e wpp
+        // Função para validar o formato de e-mail
+        function validarEmail(email) {
+            const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return regex.test(email);
+        }
+
+        // Função para validar o formato do número de WhatsApp brasileiro
+        function validarWhatsapp(whatsapp) {
+            const regex = /^\(\d{2}\)\s9\d{4}-\d{4}$/;
+            return regex.test(whatsapp);
+        }
+
+        // Referência para os inputs de e-mail e WhatsApp
+        const emailInput = document.getElementById('emailInput');
+        const whatsappInput = document.getElementById('whatsappInput');
+        const errorMessage = document.getElementById('error-message');
+
+        // Adicione os estilos diretamente no JavaScript
+        emailInput.style.border = '1px solid transparent';
+        whatsappInput.style.border = '1px solid transparent';
+        errorMessage.style.color = 'red';
+
+        // Event listener para verificar o e-mail e WhatsApp quando os campos perderem o foco
+        emailInput.addEventListener('blur', validarCampos);
+        whatsappInput.addEventListener('blur', validarCampos);
+
+        function validarCampos() {
+            const email = emailInput.value;
+            const whatsapp = whatsappInput.value;
+
+            let emailValido = validarEmail(email);
+            let whatsappValido = validarWhatsapp(whatsapp);
+
+            if (!emailValido || !whatsappValido) {
+                // Email ou WhatsApp inválido, aplicar estilo de erro
+                if (!emailValido) {
+                    emailInput.style.border = '1px solid red';
+                } else {
+                    emailInput.style.border = '1px solid transparent';
+                }
+
+                if (!whatsappValido) {
+                    whatsappInput.style.border = '1px solid red';
+                } else {
+                    whatsappInput.style.border = '1px solid transparent';
+                }
+
+                errorMessage.textContent = 'Por favor, insira um e-mail e número de WhatsApp válidos.';
+            } else {
+                // Email e WhatsApp válidos, reverter estilo de erro
+                emailInput.style.border = '1px solid transparent';
+                whatsappInput.style.border = '1px solid transparent';
+                errorMessage.textContent = '';
+            }
+        }
+
+        // Event listener para reverter o estilo quando o usuário começa a editar novamente
+        emailInput.addEventListener('focus', limparErro);
+        whatsappInput.addEventListener('focus', limparErro);
+
+        function limparErro() {
+            emailInput.style.border = '1px solid transparent';
+            whatsappInput.style.border = '1px solid transparent';
+            errorMessage.textContent = '';
+        }
+
+        // Event listener para formatar e permitir um número completo de WhatsApp durante a digitação
+        whatsappInput.addEventListener('input', formatarELimitarWhatsapp);
+
+        function formatarELimitarWhatsapp() {
+            let inputValue = whatsappInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+            if (inputValue.length > 0) {
+                if (inputValue.length <= 2) {
+                    inputValue = '(' + inputValue;
+                } else if (inputValue.length <= 7) {
+                    inputValue = '(' + inputValue.substring(0, 2) + ') ' + inputValue.substring(2);
+                } else {
+                    inputValue = '(' + inputValue.substring(0, 2) + ') ' + inputValue.substring(2, 7) + '-' + inputValue.substring(7, 11);
+                }
+
+                if (inputValue.length > 15) {
+                    inputValue = inputValue.substring(0, 15); // Limita em 15 caracteres
+                }
+            }
+
+            whatsappInput.value = inputValue;
+        }
+    </script> <!-- end: Script que faz a validação do cadastro de e-mail e wpp -->
 
 
     <script src="src/js/scripts-mobile.js"></script>
