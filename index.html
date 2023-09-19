@@ -312,7 +312,70 @@
             <!-- Adicione mais produtos conforme necessário -->
         </div>
     </section>
-
+    
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-wrapper">
+            <section class="footer-top">
+                <div class="footer-headline">
+                    <h2>Sign up to our newsletter</h2>
+                    <p>
+                        Stay up to date with our news and articles
+                    </p>
+                </div>
+                <div class="footer-subscribe">
+                    <input type="email" name="" id=""
+                        placeholder="Seu e-mail"
+                    >
+                    <button type="submit">Sign Up</button>
+                </div>
+            </section>
+            <div class="footer-columns">
+                <section class="footer-logo">
+                    <svg xmlns="https://www.w3.org/2000/svg" class="logo-footer" fill="none" viewbox="30 30 126 126">
+                        <!-- svg content -->
+                    </svg>
+                    <h2 class="hide">Astra</h2>
+                </section>
+                <section>
+                    <h3>Products</h3>
+                    <ul>
+                        <li>
+                            <a href="#" title="API">API</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Pricing">Pricing</a>
+                        </li>
+                        <!-- More items -->
+                    </ul>
+                </section>
+                <!-- More Sections -->
+            </div>
+            <div class="footer-bottom">
+                <small>My Company Ltda. <span id="year"></span>. All rights reserved</small>
+                <span class="social-links">
+                    <a href="#" title="Instagram">
+                        <img src="src/image/icons/" alt="Instagram" srcset="">
+                    </a>
+                    <a href="#" title="Instagram">
+                        <img src="src/image/icons/" alt="Instagram" srcset="">
+                    </a>
+                    <a href="#" title="Instagram">
+                        <img src="src/image/icons/" alt="Instagram" srcset="">
+                    </a>
+                    <a href="#" title="Instagram">
+                        <img src="src/image/icons/" alt="Instagram" srcset="">
+                    </a>
+                    <a href="#" title="Instagram">
+                        <img src="src/image/icons/" alt="Instagram" srcset="">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script> // ini: Script que insere o ano nos direitos reservados no Footer -->
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script> <!-- end: Script que insere o ano nos direitos reservados no Footer -->
 
 
     <script src="src/js/scripts-mobile.js"></script>
