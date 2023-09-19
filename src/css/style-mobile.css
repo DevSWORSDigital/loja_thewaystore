@@ -629,13 +629,6 @@ footer {
         justify-content: center;
         margin: 0 auto;
     }
-
-    .social-links {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap: 12px;
-    }
 }
 
 /* end: Footer */    
