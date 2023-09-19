@@ -565,10 +565,10 @@ footer {
     gap: 8px;
 }
 
-.footer-logo > svg {
+.footer-logo > img {
     stroke: #111420;
     stroke-width: 8px;
-    width: 50px;
+    max-width: 140px;
 }
 
 .footer-bottom {
