@@ -458,10 +458,14 @@ footer {
     padding: 16px;
 }
 
+.container-selos-titulo-subtitulo {
+    padding: 16px;
+}
+
 .container-selos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 16px;
 }
