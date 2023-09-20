@@ -477,7 +477,7 @@ footer {
     align-items: start;
     gap: 16px;
     padding-top: 12px;
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 .container-compra-segura {
@@ -486,7 +486,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    padding: 10px;
+    padding: 20px 10px;
     width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -501,7 +501,7 @@ footer {
 
 .container-compra-segura > p {
     text-align: center;
-    margin: 12px 0;
+    margin: 0;
     padding-top: 5px;
 }
 
