@@ -458,6 +458,33 @@ footer {
     padding: 16px;
 }
 
+.container-selos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.container-compra-segura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-compra-segura > img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+.container-compra-segura > p {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 5px;
+}
+
 .footer-top {
     display: flex;
     flex-wrap: wrap;
