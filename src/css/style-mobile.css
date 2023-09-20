@@ -458,8 +458,12 @@ footer {
     padding: 16px;
 }
 
+.container-items {
+    background: linear-gradient(90deg, #e5eaf5 50%, #e5eaf5);
+}
+
 .container-selos-titulo-subtitulo {
-    padding: 16px;
+    padding: 32px 24px;
 }
 
 .container-selos-titulo-subtitulo > h2 {
@@ -470,9 +474,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     gap: 16px;
-    padding-top: 16px;
+    padding-top: 12px;
+    margin: 0 20px;
 }
 
 .container-compra-segura {
@@ -480,6 +485,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 6px 10px 15px -3px rgba(0,0,0,0.03);
 }
 
 .container-compra-segura > img {
