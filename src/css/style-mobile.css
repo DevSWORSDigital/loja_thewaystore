@@ -467,6 +467,7 @@
         align-items: center;
         color: #151b2f;
         background-color: #5fe800;
+        border-radius: 5px;
     }
 
     .frete-gratis > p {
