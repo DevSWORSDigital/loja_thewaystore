@@ -344,13 +344,21 @@
 
     .cores {
         display: flex;
+        align-items: center;
+        
         margin: 5px 0;
+    }
+
+    .product-color-text {
+        color: #00a2d1;
+        font-size: 14px;
+        padding-right: 2px;
     }
 
     #preto {
         width: 15px;
         height: 15px;
-        border: .5px solid black;
+        border: .2px solid black;
         background-color: black;
         border-radius: 50%;
         margin: 2px;
@@ -359,7 +367,7 @@
     #branco {
         width: 15px;
         height: 15px;
-        border: .5px solid black;
+        border: .2px solid black;
         background-color: white;
         border-radius: 50%;
         margin: 2px;
@@ -401,12 +409,12 @@
     }
 
     .preco-antigo {
-        margin: 10px 0 0 0;
+        margin: 0px 0 0 0;
     }
 
     #linha {
         position: absolute;
-        top: 20px;
+        top: 11px;
         width: 75px;
         height: 1px;
         background-color: black;
