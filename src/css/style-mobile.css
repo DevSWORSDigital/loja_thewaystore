@@ -336,6 +336,12 @@
         margin-bottom: 0px;
     }
 
+    .product-subtittle-text {
+        color: #00a2d1;
+        font-size: 14px;
+        margin: 5px 0 0 0;
+    }
+
     .product-ref {
         margin-top: 0;
     }
@@ -357,14 +363,14 @@
 
     .container-preco-antigo-preco-com-desconto {
         display: flex;
-        align-items: center;
         justify-content: space-around;
+        flex-direction: column;
     }
 
     .container-price {
         display: flex;
         align-items: center;
-        padding-left: 30px;
+        
     }
 
     .container-preco-antigo {
@@ -372,7 +378,7 @@
     }
 
     .preco-antigo {
-        margin: 10px 0 24px 0;
+        margin: 10px 0 0 0;
     }
 
     #linha {
@@ -392,6 +398,7 @@
         font-size: 24px;
         font-weight: 800;
         margin-top: 10px;
+        margin-bottom: 0;
     }
 
     .centavos {
@@ -400,6 +407,32 @@
         font-weight: bold;
         align-items: start;
         margin-top: 0;
+    }
+
+    .condicao-pgmto {
+        color: #151b2f;
+        font-size: 14px;
+        margin: 10px 0 20px 0;
+    }
+
+    .container-frete-gratis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frete-gratis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #151b2f;
+        background-color: #5fe800;
+    }
+
+    .frete-gratis > p {
+        text-align: center;
+        margin: 0;
+        padding: 4px 50px;
     }
     
     .product-buttons {
