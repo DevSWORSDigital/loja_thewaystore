@@ -291,7 +291,7 @@
         overflow-x: auto;
         padding: 20px; 
         gap: 20px;
-        align-items: flex-start;
+        align-items: center;
         scrollbar-width: none; /* Hide scrollbar in Firefox */
     }
     
@@ -517,6 +517,11 @@
         width: 20px;
         height: 20px;
         filter: brightness(0) invert(1); /* Aplica o filtro para sobrepor a cor de fundo */
+    }
+
+    .next-buttom > img {
+        justify-content: center;
+        align-items: center;
     }
 
 /* ini: Footer */    
