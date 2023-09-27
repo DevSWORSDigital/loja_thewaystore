@@ -382,6 +382,15 @@
         margin: 2px;
     }
 
+    #animal-print-onca {
+        width: 15px;
+        height: 15px;
+        border: .2px solid black;
+        background: linear-gradient(135deg, #db9e5d 40%, black );
+        border-radius: 50%;
+        margin: 2px;
+    }
+
     .product-ref {
         margin-top: 0;
     }
