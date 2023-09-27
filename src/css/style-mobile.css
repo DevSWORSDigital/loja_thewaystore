@@ -391,6 +391,15 @@
         margin: 2px;
     }
 
+    #azul-piscina {
+        width: 15px;
+        height: 15px;
+        border: .2px solid black;
+        background-color: #84b8a9;
+        border-radius: 50%;
+        margin: 2px;
+    }
+
     .product-ref {
         margin-top: 0;
     }
