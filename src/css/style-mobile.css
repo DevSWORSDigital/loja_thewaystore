@@ -26,6 +26,8 @@
         font-weight: 200;
     }
 
+/* ini: menu harburg*/    
+
     .container-hamburg-logo {
         display: flex;
         align-items: center;
@@ -68,6 +70,8 @@
     nav ul li {
         margin-right: 20px;
     }
+
+/* end: menu harburg*/
 
     .logo-top {
         display: flex;
