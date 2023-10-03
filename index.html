@@ -43,837 +43,839 @@
             color: red;
         }
 </style>
+<script src="src/preloader/preloader.js"></script>
+<link rel="stylesheet" href="src/preloader/preloader.css">
 </head>
 <body>
-    <header>
-        <div class="info-mkt"><i>Frete grátis para todo o Brasil!</i></div>
-        <div class="container-hamburg-logo">
-            <div class="container-hamburg">
-                <div class="hamburg-menu">
-                    <div id="line-high"></div>
-                    <div id="line-midd"></div>
-                    <div id="line-low"></div>
-                </div>
-            </div>
-            <div class="logo-top"><img src="src/image/branding/logo1.png" alt="Logo The Way - Store" srcset=""></div>
-            <div class="container-cart">
-                <div class="cart"><img src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></div>
-                <div class="notification-cart">1</div>
-            </div>
-            <nav>
-                <ul><li>Home</li></ul>
-                <ul><li>Produtos</li></ul>
-                <ul><li>Contato</li></ul>
-            </nav>
+    <div class="loading-page">
+        <div class="counter">
+            <p class="frasi-loading">Carregando...</p>
+            <h1>0%</h1>
+            <hr />
         </div>
-        <div class="search-bar-container">
-            <div class="search-bar">
-                <span class="search-icon"><img id="search-icon-img" src="src/image/icons/lupa-32px-azul.png" alt="" srcset=""></span>                
-                <input type="text" name="" class="search" placeholder="Buscar produtos" onfocus="addFocus()">
-            </div>
-        </div>        
-    </header>
-    <main>
-        <div id="container-banner">
-            <div class="slider">
-                <div><img src="src/image/banner/1.jpeg" alt="Banner 1"></div>
-                <div><img src="src/image/banner/2.jpeg" alt="Banner 2"></div>
-                <div><img src="src/image/banner/3.jpeg" alt="Banner 3"></div>
-                <div><img src="src/image/banner/4.jpeg" alt="Banner 4"></div>
-                <div><img src="src/image/banner/5.jpeg" alt="Banner 5"></div>
-                <div><img src="src/image/banner/6.jpeg" alt="Banner 6"></div>
-            </div>
-        </div>
-    </main>
-    <section>
-        <h1 class="container-titulo-da-secao-nossos-produtos titulo-secao-produtos">Modas</h1>
-        <div class="container-cards-catogories">
-            <div class="row">
-                <div class="card">
-                    <img src="src/image/banner/categoria-1.png" alt="Imagem 1">
-                    <p>Íntima</p>
-                </div>
-                <div class="card">
-                    <img src="src/image/banner/fitness.png" alt="Imagem 2">
-                    <p>Fitness</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <img src="src/image/banner/praia.png" alt="Imagem 3">
-                    <p>Praia</p>
-                </div>
-                <div class="card">
-                    <img src="src/image/banner/jeans.png" alt="Imagem 4">
-                    <p>Jeans</p>
-                </div>
-            </div>
-        </div>        
-    </section>
-    <section>
-        <div class="container-titulo-da-secao-nossos-produtos">
-            <div class="container-titulo-secao-produtos-e-ver-mais-link">
-                <h1 class="titulo-secao-produtos">Bodies</h1>
-                <a class="ver-mais-link" href="https://www.submarino.com.br/lojista/the-way-store-50687207000154/g/tipo-de-produto-Body" target="_blank">Ver mais</a>
-            </div>
-            <div class="short-line-space"></div>
-        </div>
-        <div class="products-container">
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+kate', '_blank')" src="src/image/product/bodies/body_kate/Cópia de IMG_8464.jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Kate</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Com aro</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="preto"></div>
-                        <div id="branco"></div>
+    </div>
+    <div id="content" style="display: none">
+        <header>
+            <!--<div class="info-mkt"><i>Frete grátis para todo o Brasil!</i></div>-->
+            <div class="container-hamburg-logo">
+                <div class="container-hamburg">
+                    <div class="hamburg-menu">
+                        <div id="line-high"></div>
+                        <div id="line-midd"></div>
+                        <div id="line-low"></div>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 171745</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (17)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 219<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 199<sup class="centavos">,90</sup></p>
+                </div>
+                <div class="logo-top"><img src="src/image/branding/logo1.png" alt="Logo The Way - Store" srcset=""></div>
+                <div class="container-cart">
+                    <div class="cart"><img src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></div>
+                    <div class="notification-cart">1</div>
+                </div>
+                <nav>
+                    <ul><li>Home</li></ul>
+                    <ul><li>Produtos</li></ul>
+                    <ul><li>Contato</li></ul>
+                </nav>
+            </div>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <span class="search-icon"><img id="search-icon-img" src="src/image/icons/lupa-32px-azul.png" alt="" srcset=""></span>
+                    <input type="text" name="" class="search" placeholder="Buscar produtos" onfocus="addFocus()">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="container-banner">
+                <div class="slider">
+                    <div><img src="src/image/banner/1.jpg" alt="Banner 1" class="fade-transition"></div>
+                </div>
+            </div>
+        </main>
+        <section>
+            <h1 class="container-titulo-da-secao-nossos-produtos titulo-secao-produtos">Modas</h1>
+            <div class="container-cards-catogories">
+                <div class="row">
+                    <div class="card">
+                        <img src="src/image/banner/categoria-1.jpg" alt="Imagem 1">
+                        <p>Íntima</p>
+                    </div>
+                    <div class="card">
+                        <img src="src/image/banner/fitness.jpg" alt="Imagem 2">
+                        <p>Fitness</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img src="src/image/banner/praia.jpg" alt="Imagem 3">
+                        <p>Praia</p>
+                    </div>
+                    <div class="card">
+                        <img src="src/image/banner/jeans.jpg" alt="Imagem 4">
+                        <p>Jeans</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-titulo-da-secao-nossos-produtos">
+                <div class="container-titulo-secao-produtos-e-ver-mais-link">
+                    <h1 class="titulo-secao-produtos">Bodies</h1>
+                    <a class="ver-mais-link" href="https://www.submarino.com.br/lojista/the-way-store-50687207000154/g/tipo-de-produto-Body" target="_blank">Ver mais</a>
+                </div>
+                <div class="short-line-space"></div>
+            </div>
+            <div class="products-container">
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+kate', '_blank')" src="src/image/product/bodies/body_kate/kate.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Kate</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Com aro</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="preto"></div>
+                            <div id="branco"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 171745</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (17)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 219<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 199<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+kate', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+kate', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+chloe', '_blank')" src="src/image/product/bodies/body_chloe/Cópia de image00055.jpeg.jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Chloé</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Com aro</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="rubi"></div>
-                        <div id="preto"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+kate', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+kate', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 810096</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (11)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 179<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+chloe', '_blank')" src="src/image/product/bodies/body_chloe/chloe.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Chloé</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Com aro</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="rubi"></div>
+                            <div id="preto"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 810096</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (11)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 179<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+chloe', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+chloe', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')" src="src/image/product/bodies/body_sophi/Cópia de IMG_3114.JPG" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Sophi</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Com aro</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="preto"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+chloe', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+chloe', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 243495</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (5)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 179<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')" src="src/image/product/bodies/body_sophi/sophi2.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Sophi</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Com aro</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="preto"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 243495</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (5)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 179<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+soraia', '_blank')" src="src/image/product/bodies/body_soraya/Body Soraya (16).jpeg.jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Soraia</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Transparente, Animal Print</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="animal-print-onca"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (2)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 75<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 59<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+soraia', '_blank')" src="src/image/product/bodies/body_soraya/soraya.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Soraia</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Transparente, Animal Print</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="animal-print-onca"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (2)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 75<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 59<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+soraia', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+soraia', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')" src="src/image/product/bodies/body_sophi/Cópia de fdh.jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Sophi</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Com aro</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="rubi"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+soraia', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+soraia', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (6)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 75<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 59<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')" src="src/image/product/bodies/body_sophi/sophi1.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Sophi</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Com aro</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="rubi"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (6)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 75<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 59<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+Aladim', '_blank')" src="src/image/product/bodies/body_aladim/Cópia de image00055.jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Aladim</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Com renda e tule</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="branco"></div>
-                        <div id="rubi"></div>
-                        <div id="preto"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+sophi', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (21)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 139<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 114<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+Aladim', '_blank')" src="src/image/product/bodies/body_aladim/aladim.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Aladim</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Com renda e tule</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="branco"></div>
+                            <div id="rubi"></div>
+                            <div id="preto"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (21)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 139<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 114<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+Aladim', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+Aladim', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+martina', '_blank')" src="src/image/product/bodies/body_martina/Body Martina (28).jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Martina</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Sem aro e bojo</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="rubi"></div>
-                        <div id="preto"></div>
-                        <div id="branco"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+Aladim', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+Aladim', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (16)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 159<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 129<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+martina', '_blank')" src="src/image/product/bodies/body_martina/martina.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Martina</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Sem aro e bojo</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="rubi"></div>
+                            <div id="preto"></div>
+                            <div id="branco"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (16)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 159<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 129<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+martina', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+martina', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+brenda+luxo', '_blank')" src="src/image/product/bodies/body_brenda/Cópia de Foto 09-02-2022 17 27 39.jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Brenda Luxo</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Sem bojo e com aro</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="rubi"></div>
-                        <div id="preto"></div>
-                        <div id="branco"></div>
-                        <div id="azul-piscina"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+martina', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+martina', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (19)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 159<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+brenda+luxo', '_blank')" src="src/image/product/bodies/body_brenda/brenda.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Brenda Luxo</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Sem bojo e com aro</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="rubi"></div>
+                            <div id="preto"></div>
+                            <div id="branco"></div>
+                            <div id="azul-piscina"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (19)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 159<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+brenda+luxo', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+brenda+luxo', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+blair', '_blank')" src="src/image/product/bodies/body_blair/Body Blair (7).jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Blair</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Sem bojo e com aro</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="preto"></div>
-                        <div id="rubi"></div>
-                        <div id="branco"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+brenda+luxo', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+brenda+luxo', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (14)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 179<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+blair', '_blank')" src="src/image/product/bodies/body_blair/blair.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Blair</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Sem bojo e com aro</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="preto"></div>
+                            <div id="rubi"></div>
+                            <div id="branco"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (14)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 179<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+blair', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+blair', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+new+gola', '_blank')" src="src/image/product/bodies/body_new_gola/image00088.jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body New Gola</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Sem aro e bojo</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="branco"></div>
-                        <div id="preto"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+blair', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+blair', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (9)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 119<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 89<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+new+gola', '_blank')" src="src/image/product/bodies/body_new_gola/new_gola.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body New Gola</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Sem aro e bojo</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="branco"></div>
+                            <div id="preto"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (9)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 119<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 89<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+new+gola', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+new+gola', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+clarice', '_blank')" src="src/image/product/bodies/body_clarice/image00211.jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Clarice</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Sem aro e bojo</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="rubi"></div>
-                        <div id="branco"></div>
-                        <div id="preto"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+new+gola', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+new+gola', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (7)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 139<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 129<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+clarice', '_blank')" src="src/image/product/bodies/body_clarice/clarice.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Clarice</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Sem aro e bojo</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="rubi"></div>
+                            <div id="branco"></div>
+                            <div id="preto"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (7)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 139<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 129<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+clarice', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+clarice', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+ella', '_blank')" src="src/image/product/bodies/body_ella/image00002.jpeg.jpg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Body Ella</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Sem aro e com bojo</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="branco"></div>
-                        <div id="preto"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+clarice', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+clarice', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (23)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 189<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+ella', '_blank')" src="src/image/product/bodies/body_ella/ella.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Body Ella</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Sem aro e com bojo</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="branco"></div>
+                            <div id="preto"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (23)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 189<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 149<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+ella', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+ella', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-
-
-            <!------------------------------------------------------------------------------------->
-            <!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT -->
-            <!------------------------------------------------------------------------------------->
-            <div class="next-buttom">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154/g/tipo-de-produto-Body', '_blank')" src="src/image/icons/next-icon.png" alt="" srcset="">
-            </div>
-            <!------------------------------------------------------------------------------------->
-            <!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT -->
-            <!------------------------------------------------------------------------------------->
-        </div>
-    </section>
-    <section>
-        <div class="container-titulo-da-secao-nossos-produtos">
-            <div class="container-titulo-secao-produtos-e-ver-mais-link">
-                <h1 class="titulo-secao-produtos">Lingeries</h1>
-                <a class="ver-mais-link" href="https://www.submarino.com.br/lojista/the-way-store-50687207000154/g/tipo-de-produto-Conjunto" target="_blank">Ver mais</a>
-            </div>
-            <div class="short-line-space"></div>
-        </div>
-        <div class="products-container">
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+calesson', '_blank')" src="src/image/product/conj-lingeries/Renata Calesson/b0ba73905b486e7c93391b8abf201c5cd0e04cb459f732e36103f40fc6327cc3.jpeg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Conjunto Renata Renda</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Com calcinha Calesson</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="preto"></div>
-                        <div id="rubi"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+ella', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=body+ella', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (20)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 109<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 73<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <!------------------------------------------------------------------------------------->
+                <!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT -->
+                <!------------------------------------------------------------------------------------->
+                <div class="next-buttom">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154/g/tipo-de-produto-Body', '_blank')" src="src/image/icons/next-icon.png" alt="" srcset="">
+                </div>
+                <!------------------------------------------------------------------------------------->
+                <!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT -->
+                <!------------------------------------------------------------------------------------->
+            </div>
+        </section>
+        <section>
+            <div class="container-titulo-da-secao-nossos-produtos">
+                <div class="container-titulo-secao-produtos-e-ver-mais-link">
+                    <h1 class="titulo-secao-produtos">Lingeries</h1>
+                    <a class="ver-mais-link" href="https://www.submarino.com.br/lojista/the-way-store-50687207000154/g/tipo-de-produto-Conjunto" target="_blank">Ver mais</a>
+                </div>
+                <div class="short-line-space"></div>
+            </div>
+            <div class="products-container">
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+calesson', '_blank')" src="src/image/product/conj-lingeries/Renata Calesson/renata-calesson.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Conjunto Renata Renda</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Com calcinha Calesson</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="preto"></div>
+                            <div id="rubi"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (20)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 109<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 73<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button  class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+calesson', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+calesson', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+micro+renda', '_blank')" src="src/image/product/conj-lingeries/Renata Microfibra e Renda/918056ddcea109e7375cfd654b593aad978a2f17909e16cf1fd154310a85063e.jpeg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Conjunto Renata Renda</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Calcinha fio duplo (microfibra/renda)</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="rose"></div>
-                        <div id="preto"></div>
+                    <div class="product-buttons">
+                        <button  class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+calesson', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+calesson', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (18)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 139<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 129<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+micro+renda', '_blank')" src="src/image/product/conj-lingeries/Renata Microfibra e Renda/renata-mr-rose.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Conjunto Renata Renda</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Calcinha fio duplo (microfibra/renda)</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="rose"></div>
+                            <div id="preto"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (18)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 139<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 129<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+micro+renda', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+micro+renda', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+bandage', '_blank')" src="src/image/product/conj-lingeries/Renata Bandage/a6ed412d7f80996d7b5773c9f44944d362f8c6271d62edb37072de919ba6395c.jpeg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Conjunto Renata Renda</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Com calcinha Bandage</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="rubi"></div>
-                        <div id="preto"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+micro+renda', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+micro+renda', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (23)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 109<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 73<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+bandage', '_blank')" src="src/image/product/conj-lingeries/Renata Bandage/renata-bandage.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Conjunto Renata Renda</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Com calcinha Bandage</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="rubi"></div>
+                            <div id="preto"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (23)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 109<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 73<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+bandage', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+bandage', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+diva', '_blank')" src="src/image/product/conj-lingeries/Diva Calesson/521920a7f59b72e24d2db333d07e5d75dc40136d09dbf564ec80f067903ea26a.jpeg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Conjunto Diva Renda</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Com calcinha Calesson</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="nude"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+bandage', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+renata+bandage', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (8)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 107<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 71<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+diva', '_blank')" src="src/image/product/conj-lingeries/Diva Calesson/diva-calesson.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Conjunto Diva Renda</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Com calcinha Calesson</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="nude"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (8)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 107<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 71<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+diva', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+diva', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-            <div class="product">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+gabriela', '_blank')" src="src/image/product/conj-lingeries/Gabriela Microfibra e Renda/c115af59cdd47e5fa2895d254dadd6628a025557d160059cf6a4fdec325987c1.jpeg" alt="Product 1">
-                <div class="container-info-product">
-                    <div class="product-title"><p class="product-tittle-text">Conjunto Gabriela Renda</p></div>
-                    <div class="product-subtittle"><p class="product-subtittle-text">Calcinha fio duplo (microfibra/renda)</p></div>
-                    <div class="cores">
-                        <small class="product-color-text">Cor:</small>
-                        <div id="nude"></div>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+diva', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+diva', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
-                    <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (10)</small></p></div>
-                    <div class="container-preco-antigo-preco-com-desconto">
-                        <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 109<sup class="centavos-preco-antigo">,90</sup></p></div>
-                        <div class="container-price">
-                            <p class="reais">R$ 73<sup class="centavos">,90</sup></p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <div class="product">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+gabriela', '_blank')" src="src/image/product/conj-lingeries/Gabriela Microfibra e Renda/gabriela-mr.jpg" alt="Product 1">
+                    <div class="container-info-product">
+                        <div class="product-title"><p class="product-tittle-text">Conjunto Gabriela Renda</p></div>
+                        <div class="product-subtittle"><p class="product-subtittle-text">Calcinha fio duplo (microfibra/renda)</p></div>
+                        <div class="cores">
+                            <small class="product-color-text">Cor:</small>
+                            <div id="nude"></div>
                         </div>
-                    </div>
-                    <div class="container-condicao-pgmto">
-                        <p class="condicao-pgmto">Em até 12x sem juros!</p>
-                        <div class="container-frete-gratis">
-                            <div class="frete-gratis">
-                                <p><small>Frete grátis!</small></p>
+                        <div class="product-ref"><p class="product-ref-text">Ref. 812066</p></div>
+                        <div class="container-rating-products"><p class="rating-products-span-p"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><small> (10)</small></p></div>
+                        <div class="container-preco-antigo-preco-com-desconto">
+                            <div class="container-preco-antigo"><div id="linha"></div><p class="preco-antigo" class="reais-preco-antigo">R$ 109<sup class="centavos-preco-antigo">,90</sup></p></div>
+                            <div class="container-price">
+                                <p class="reais">R$ 73<sup class="centavos">,90</sup></p>
+                            </div>
+                        </div>
+                        <div class="container-condicao-pgmto">
+                            <p class="condicao-pgmto">Em até 12x sem juros!</p>
+                            <div class="container-frete-gratis">
+                                <div class="frete-gratis">
+                                    <p><small>Frete grátis!</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-buttons">
-                    <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+gabriela', '_blank')">Comprar</button>
-                    <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+gabriela', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
-                </div>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
-
-
-            <!------------------------------------------------------------------------------------->
-            <!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT -->
-            <!------------------------------------------------------------------------------------->
-            <div class="next-buttom">
-                <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154/g/tipo-de-produto-Conjunto', '_blank')" src="src/image/icons/next-icon.png" alt="" srcset="">
-            </div>
-            <!------------------------------------------------------------------------------------->
-            <!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT -->
-            <!------------------------------------------------------------------------------------->
-        </div>
-    </section>
-    <section style="display: none;"> <!-- Remover o display none qdo for add produtos -->
-        <div class="container-titulo-da-secao-nossos-produtos">
-            <div class="container-titulo-secao-produtos-e-ver-mais-link">
-                <h1 class="titulo-secao-produtos">Moda [...]</h1>
-                <a class="ver-mais-link" href="###">Ver mais</a>
-            </div>
-            <div class="short-line-space"></div>
-        </div>
-        <div class="products-container">
-            <p>Em Breve!</p> <!-- remover essa linha quando for add produtos -->
-        </div>
-    </section>
-    <section style="display: none;"> <!-- Remover o display none qdo for add produtos -->
-        <div class="container-titulo-da-secao-nossos-produtos">
-            <div class="container-titulo-secao-produtos-e-ver-mais-link">
-                <h1 class="titulo-secao-produtos">Moda [...]</h1>
-                <a class="ver-mais-link" href="###">Ver mais</a>
-            </div>
-            <div class="short-line-space"></div>
-        </div>
-        <div class="products-container">
-            <p>Em Breve!</p> <!-- remover essa linha quando for add produtos -->
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer-line"></div>
-        <div class="container-items">
-            <div class="container-selos-titulo-subtitulo">
-                <h2>Aproveite!</h2>
-                <p>Conosco você tem:</p>
-                <div class="container-selos">
-                    <div class="container-compra-segura">
-                        <img src="src/image/icons/escudo.png" alt="" srcset="">
-                        <p>Compra segura!</p>
+                    <div class="product-buttons">
+                        <button class="buy-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+gabriela', '_blank')">Comprar</button>
+                        <button class="cart-button" onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154?conteudo=conjunto+gabriela', '_blank')">+<img id="cart-icon" src="src/image/icons/carrinho-de-compras-32px.png" alt="" srcset=""></button>
                     </div>
-                    <div class="container-compra-segura">
-                        <img src="src/image/icons/entrega-rapida.png" alt="" srcset="">
-                        <p>Envio rápido!</p>
-                    </div>
-                    <div class="container-compra-segura">
-                        <img src="src/image/icons/agente-de-atendimento-ao-cliente.png" alt="" srcset="">
-                        <p>Suporte<br>humanizado!</p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+                <!------------------------------------------------------------------------------------->
+                <!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT -->
+                <!------------------------------------------------------------------------------------->
+                <div class="next-buttom">
+                    <img onclick="window.open('https://www.submarino.com.br/lojista/the-way-store-50687207000154/g/tipo-de-produto-Conjunto', '_blank')" src="src/image/icons/next-icon.png" alt="" srcset="">
+                </div>
+                <!------------------------------------------------------------------------------------->
+                <!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT --><!-- BOTÃO DE NEXT -->
+                <!------------------------------------------------------------------------------------->
+            </div>
+        </section>
+        <section style="display: none;"> <!-- Remover o display none qdo for add produtos -->
+            <div class="container-titulo-da-secao-nossos-produtos">
+                <div class="container-titulo-secao-produtos-e-ver-mais-link">
+                    <h1 class="titulo-secao-produtos">Moda [...]</h1>
+                    <a class="ver-mais-link" href="###">Ver mais</a>
+                </div>
+                <div class="short-line-space"></div>
+            </div>
+            <div class="products-container">
+                <p>Em Breve!</p> <!-- remover essa linha quando for add produtos -->
+            </div>
+        </section>
+        <section style="display: none;"> <!-- Remover o display none qdo for add produtos -->
+            <div class="container-titulo-da-secao-nossos-produtos">
+                <div class="container-titulo-secao-produtos-e-ver-mais-link">
+                    <h1 class="titulo-secao-produtos">Moda [...]</h1>
+                    <a class="ver-mais-link" href="###">Ver mais</a>
+                </div>
+                <div class="short-line-space"></div>
+            </div>
+            <div class="products-container">
+                <p>Em Breve!</p> <!-- remover essa linha quando for add produtos -->
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-line"></div>
+            <div class="container-items">
+                <div class="container-selos-titulo-subtitulo">
+                    <h2>Aproveite!</h2>
+                    <p>Conosco você tem:</p>
+                    <div class="container-selos">
+                        <div class="container-compra-segura">
+                            <img src="src/image/icons/escudo.png" alt="" srcset="">
+                            <p>Compra segura!</p>
+                        </div>
+                        <div class="container-compra-segura">
+                            <img src="src/image/icons/entrega-rapida.png" alt="" srcset="">
+                            <p>Envio rápido!</p>
+                        </div>
+                        <div class="container-compra-segura">
+                            <img src="src/image/icons/agente-de-atendimento-ao-cliente.png" alt="" srcset="">
+                            <p>Suporte<br>humanizado!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-line"></div>
-        <div class="footer-wrapper">
-            <section class="footer-top">
-                <div class="footer-headline">
-                    <h2>Cadastre seu e-mail</h2>
-                    <p>
-                        e seja o 1º à receber promoções relâmpago!
-                    </p>
-                </div>
-                <div class="footer-subscribe">
-                    <input type="email" name="" id="emailInput"
-                        placeholder="Seu e-mail" 
-                    >
-                    <input type="tel" name="" id="whatsappInput"
-                    placeholder="Seu WhatsApp" 
-                    >
-                    <button type="submit">Enviar</button>
-                </div>
-                <p id="error-message" style="color: red;"></p>
-            </section>
-            <div class="footer-columns">
-                <section class="footer-logo">
-                    <img src="src/image/branding/logo1.png" alt="" srcset="" class="logo-footer" fill="none" viewbox="30 30 126 126">
+            <div class="footer-line"></div>
+            <div class="footer-wrapper">
+                <section class="footer-top">
+                    <div class="footer-headline">
+                        <h2>Cadastre seu e-mail</h2>
+                        <p>
+                            e seja o 1º à receber promoções relâmpago!
+                        </p>
+                    </div>
+                    <div class="footer-subscribe">
+                        <input type="email" name="" id="emailInput"
+                            placeholder="Seu e-mail"
+                        >
+                        <input type="tel" name="" id="whatsappInput"
+                        placeholder="Seu WhatsApp"
+                        >
+                        <button type="submit">Enviar</button>
+                    </div>
+                    <p id="error-message" style="color: red;"></p>
                 </section>
-                <section>
-                    <h3>Produtos</h3>
-                    <ul>
-                        <li>
-                            <a href="#" title="API">Íntima</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Fitness</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Jeans</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Praia</a>
-                        </li>
-                        <!-- More items -->
-                    </ul>
-                </section>
-                <section>
-                    <h3>Nossa Empresa</h3>
-                    <ul>
-                        <li>
-                            <a href="#" title="API">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Políticas</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Tire suas dúvidas</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Contato</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Trabalhe conosco</a>
-                        </li>
-                        <!-- More items -->
-                    </ul>
-                </section>
-                <!-- More Sections -->
-                <section>
-                    <h3>Suporte</h3>
-                    <ul>
-                        <li>
-                            <a href="#" title="API">Fale conosco</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Troca de Produto</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Garantia</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Sugira produtos</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Pricing">Deixe sua avalição</a>
-                        </li>
-                        <!-- More items -->
-                    </ul>
-                </section>
-                <!-- More Sections -->
+                <div class="footer-columns">
+                    <section class="footer-logo">
+                        <img src="src/image/branding/logo1.png" alt="" srcset="" class="logo-footer" fill="none" viewbox="30 30 126 126">
+                    </section>
+                    <section>
+                        <h3>Produtos</h3>
+                        <ul>
+                            <li>
+                                <a href="#" title="API">Íntima</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Fitness</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Jeans</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Praia</a>
+                            </li>
+                            <!-- More items -->
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Nossa Empresa</h3>
+                        <ul>
+                            <li>
+                                <a href="#" title="API">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Políticas</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Tire suas dúvidas</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Contato</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Trabalhe conosco</a>
+                            </li>
+                            <!-- More items -->
+                        </ul>
+                    </section>
+                    <!-- More Sections -->
+                    <section>
+                        <h3>Suporte</h3>
+                        <ul>
+                            <li>
+                                <a href="#" title="API">Fale conosco</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Troca de Produto</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Garantia</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Sugira produtos</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Pricing">Deixe sua avalição</a>
+                            </li>
+                            <!-- More items -->
+                        </ul>
+                    </section>
+                    <!-- More Sections -->
+                </div>
+                <div class="footer-bottom">
+                    <small>The Way - Store Ltda.&copy <span id="year"></span> - Todos os direitos reservados.</small>
+                    <small>CNPJ 50.687.207/0001-54</small>
+                    <span class="social-links">
+                        <a href="https://www.instagram.com/thewaystore_brasil/" title="Instagram">
+                            <img src="src/image/icons/instagram.png" alt="Instagram" srcset="">
+                        </a>
+                        <a href="https://www.facebook.com/thewaystorebrasil/" title="Facebook">
+                            <img src="src/image/icons/facebook.png" alt="Facebook" srcset="">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5544999457299&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20do%20site%20e%20gostaria%20de%20ser%20atendido!%20%F0%9F%A4%A9" title="WhatsApp">
+                            <img src="src/image/icons/whatsapp.png" alt="WhatsApp" srcset="">
+                        </a>
+                        <a href="https://www.tiktok.com/@thewaystore_brasil" title="Tik Tok">
+                            <img src="src/image/icons/tiktok.png" alt="Tik Tok" srcset="">
+                        </a>
+                        <a href="#" title="YouTube" style="display: none;"> <!-- Remover o style display: none para exibir o YouTube -->
+                            <img src="src/image/icons/youtube.png" alt="YouTube" srcset="">
+                        </a>
+                    </span>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <small>The Way - Store Ltda.&copy <span id="year"></span> - Todos os direitos reservados.</small>
-                <small>CNPJ 50.687.207/0001-54</small>
-                <span class="social-links">
-                    <a href="https://www.instagram.com/thewaystore_brasil/" title="Instagram">
-                        <img src="src/image/icons/instagram.png" alt="Instagram" srcset="">
-                    </a>
-                    <a href="https://www.facebook.com/thewaystorebrasil/" title="Facebook">
-                        <img src="src/image/icons/facebook.png" alt="Facebook" srcset="">
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=5544999457299&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20do%20site%20e%20gostaria%20de%20ser%20atendido!%20%F0%9F%A4%A9" title="WhatsApp">
-                        <img src="src/image/icons/whatsapp.png" alt="WhatsApp" srcset="">
-                    </a>
-                    <a href="https://www.tiktok.com/@thewaystore_brasil" title="Tik Tok">
-                        <img src="src/image/icons/tiktok.png" alt="Tik Tok" srcset="">
-                    </a>
-                    <a href="#" title="YouTube" style="display: none;"> <!-- Remover o style display: none para exibir o YouTube -->
-                        <img src="src/image/icons/youtube.png" alt="YouTube" srcset="">
-                    </a>
-                </span>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script> // ini: Script que insere o ano nos direitos reservados no Footer -->
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script> <!-- end: Script que insere o ano nos direitos reservados no Footer -->
@@ -972,11 +974,7 @@
 
     <script src="src/js/scripts-mobile.js"></script>
 
-    <script>
 
-
-
-
-    </script>
+    
 </body>
 </html>

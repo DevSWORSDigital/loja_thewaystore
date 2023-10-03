@@ -190,6 +190,13 @@
         height: auto;
     }
 
+/* Adicione uma classe para a transição de opacidade */
+.fade-transition {
+    opacity: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+
 /*end: Main*/
 
 /* ini: Cards de categoria de produtos */

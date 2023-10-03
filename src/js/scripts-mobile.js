@@ -30,29 +30,47 @@
 
 // ini: Configurações de banner página principal
 
-    $(document).ready(function(){
-        $('.slider').slick({
-            infinite: true,
-            slidesToShow: 1, // Alterado para 1 para exibir apenas um slide por vez
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            arrows: false,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1 // Você pode ajustar esse valor para telas médias, se desejar
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1 // Você pode ajustar esse valor para telas menores, se desejar
-                    }
-                }
-            ]
-        });
+// Função para iniciar o slider
+function startSlider() {
+    var currentIndex = 0;
+    var images = [
+        "src/image/banner/2.jpg",
+        "src/image/banner/3.jpg",
+        "src/image/banner/1.jpg",
+        "src/image/banner/4.jpg",
+        "src/image/banner/5.jpg",
+        "src/image/banner/6.jpg"
+    ];
+    var slider = $('.slider');
+    var image = slider.find('img');
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        image.addClass('fade-transition');
+        setTimeout(function () {
+            image.attr('src', images[currentIndex]);
+            image.removeClass('fade-transition');
+        }, 1000);
+    }
+
+    var interval = setInterval(nextSlide, 4000);
+
+    slider.mouseenter(function () {
+        clearInterval(interval);
     });
+
+    slider.mouseleave(function () {
+        interval = setInterval(nextSlide, 4000);
+    });
+}
+
+// Aguardar até que o documento esteja completamente carregado
+$(document).ready(function () {
+    // Adicionar um ouvinte de evento para o evento personalizado "preloaderComplete"
+    window.addEventListener('preloaderComplete', function () {
+        // Iniciar o slider após o término do preloader
+        startSlider();
+    });
+});
 
 // end: Configurações de banner página principal
