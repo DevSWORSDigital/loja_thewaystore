@@ -21,7 +21,7 @@ $(document).ready(function () {
     }, 20);
 
     var frasi = [
-        "Criando algo especial!<br>Carregando"
+        "Criando algo especial!<br>Carregando..."
     ];
 
     var casuale = Math.floor(Math.random() * frasi.length);
