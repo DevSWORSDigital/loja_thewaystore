@@ -775,7 +775,7 @@
                                 e seja o 1º à receber promoções relâmpago!
                             </p>
                         </div>
-                        <form action="leads-register.php" method="post"></form>
+                        <form action="../backend/scripts/leads-register.php" method="post"></form>
                             <div class="footer-subscribe">
                                 <input type="text" name="nameInput" id="nameInput" placeholder="Nome completo">
                                 <input type="email" name="emailInput" id="emailInput" placeholder="Seu e-mail">
@@ -895,28 +895,38 @@
         }
 
         // Referência para os inputs de e-mail e WhatsApp
+        const nameInput = document.getElementById('nameInput');
         const emailInput = document.getElementById('emailInput');
         const whatsappInput = document.getElementById('whatsappInput');
         const errorMessage = document.getElementById('error-message');
 
         // Adicione os estilos diretamente no JavaScript
+        nameInput.style.border = '1px solid transparent';
         emailInput.style.border = '1px solid transparent';
         whatsappInput.style.border = '1px solid transparent';
         errorMessage.style.color = 'red';
 
         // Event listener para verificar o e-mail e WhatsApp quando os campos perderem o foco
+        nameInput.addEventListener('blur', validarCampos);
         emailInput.addEventListener('blur', validarCampos);
         whatsappInput.addEventListener('blur', validarCampos);
 
         function validarCampos() {
+            const name = nameInput.value;
             const email = emailInput.value;
             const whatsapp = whatsappInput.value;
 
             let emailValido = validarEmail(email);
             let whatsappValido = validarWhatsapp(whatsapp);
 
-            if (!emailValido || !whatsappValido) {
+            if (!nameValido || !emailValido || !whatsappValido) {
                 // Email ou WhatsApp inválido, aplicar estilo de erro
+                if (!nameValido) {
+                    nameInput.style.border = '1px solid red';
+                } else {
+                    nameInput.style.border = '1px solid transparent';
+                }
+
                 if (!emailValido) {
                     emailInput.style.border = '1px solid red';
                 } else {
@@ -929,9 +939,10 @@
                     whatsappInput.style.border = '1px solid transparent';
                 }
 
-                errorMessage.textContent = 'Por favor, insira um e-mail e número de WhatsApp válidos.';
+                errorMessage.textContent = 'Por favor, insira um nome, e-mail e WhatsApp válidos.';
             } else {
                 // Email e WhatsApp válidos, reverter estilo de erro
+                nameInput.style.border = '1px solid transparent';
                 emailInput.style.border = '1px solid transparent';
                 whatsappInput.style.border = '1px solid transparent';
                 errorMessage.textContent = '';
@@ -939,10 +950,12 @@
         }
 
         // Event listener para reverter o estilo quando o usuário começa a editar novamente
+        nameInput.addEventListener('focus', limparErro);
         emailInput.addEventListener('focus', limparErro);
         whatsappInput.addEventListener('focus', limparErro);
 
         function limparErro() {
+            nameInput.style.border = '1px solid #00a2d1';
             emailInput.style.border = '1px solid #00a2d1';
             whatsappInput.style.border = '1px solid #00a2d1';
             errorMessage.textContent = '';
