@@ -767,24 +767,25 @@
             </div>
             <div class="footer-line"></div>
             <div class="footer-wrapper">
-                <section class="footer-top">
-                    <div class="footer-headline">
-                        <h2>Cadastre seu e-mail</h2>
-                        <p>
-                            e seja o 1º à receber promoções relâmpago!
-                        </p>
-                    </div>
-                    <div class="footer-subscribe">
-                        <input type="email" name="" id="emailInput"
-                            placeholder="Seu e-mail"
-                        >
-                        <input type="tel" name="" id="whatsappInput"
-                        placeholder="Seu WhatsApp"
-                        >
-                        <button type="submit">Enviar</button>
-                    </div>
-                    <p id="error-message" style="color: red;"></p>
-                </section>
+                
+                    <section class="footer-top">
+                        <div class="footer-headline">
+                            <h2>Cadastre seu e-mail</h2>
+                            <p>
+                                e seja o 1º à receber promoções relâmpago!
+                            </p>
+                        </div>
+                        <form action="leads-register.php" method="post"></form>
+                            <div class="footer-subscribe">
+                                <input type="text" name="nameInput" id="nameInput" placeholder="Nome completo">
+                                <input type="email" name="emailInput" id="emailInput" placeholder="Seu e-mail">
+                                <input type="tel" name="whatsappInput" id="whatsappInput" placeholder="Seu WhatsApp">
+                                <button type="submit">Enviar</button>
+                            </div>
+                            <p id="error-message" style="color: red;"></p>
+                        </form>
+                    </section>
+                
                 <div class="footer-columns">
                     <section class="footer-logo">
                         <img src="src/image/branding/logo1.png" alt="" srcset="" class="logo-footer" fill="none" viewbox="30 30 126 126">
