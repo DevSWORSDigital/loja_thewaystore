@@ -5,7 +5,7 @@ require_once('../includes/db_connect.php'); // Inclua o arquivo de conexão
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Verifica se os campos obrigatórios foram enviados
-    if (isset($_POST['lead-name']) && isset($_POST['emailInput']) && isset($_POST['whatsappInput'])) {
+    if (isset($_POST['nameInput']) && isset($_POST['emailInput']) && isset($_POST['whatsappInput'])) {
         // Obtém os dados do formulário
         $name = $_POST['nameInput'];
         $email = $_POST['emailInput'];
