@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-require_once('../includes/db_connect.php'); // Inclua o arquivo de conexão
+require_once('../includes/db.connect_leads_ecommerce.php'); // Inclua o arquivo de conexão
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Verifica se os campos obrigatórios foram enviados
