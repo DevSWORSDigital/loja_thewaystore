@@ -16,15 +16,61 @@
         width: 100%;
     }
 
+    .alerta-info-mkt {
+        width: 20px;
+        height: 20px;
+        padding: 0 5px;
+    }
+
     .info-mkt {
-        background-color: #0099c4;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #000;
         height: 40px;
-        color: #fbfbfb;
+        overflow: hidden;
+        color: #0099c4;
         font-weight: 200;
-    }
+        position: relative;
+        display: flex;
+      }
+      
+      .scrolling-text {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        white-space: nowrap;
+        width: max-content;
+        margin-right: 20px; /* Espaço entre os spans */
+        animation: scrollText 60s linear infinite;
+      }
+      
+      .scrolling-text1 {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        white-space: nowrap;
+        width: max-content;
+        margin-right: 0px; /* Espaço entre os spans */
+      }
+      
+      .alerta-info-mkt {
+        margin: 0 8px; /* Espaço entre o ícone e o texto */
+        vertical-align: middle;
+      }
+      
+      @keyframes scrollText {
+        0% {
+          transform: translateX(50%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      
+    
 
 /* ini: menu harburg*/    
 

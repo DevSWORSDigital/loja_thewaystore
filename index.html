@@ -7,6 +7,7 @@
     <meta name="keywords" content="Moda íntima, Lingerie, Roupa de baixo, Sutiã, Calcinha, Camisola, Pijama feminino, Moda lingerie, Moda fitness, Roupas de academia, Leggings esportivas, Top fitness, Roupas para malhar, Ativewear, Moda esportiva feminina, Moda jeans, Jeans feminino, Calça jeans, Jaqueta jeans, Saia jeans, Moda denim, Jeans de cintura alta, Moda praia, Biquíni, Maiô, Saída de praia, Sunga feminina, Roupa de banho, Acessórios de praia">
     <meta name="keywords-long-tail" content="Lingerie de renda vermelha, Conjunto de sutiã e calcinha, Camisola de seda para mulheres, Pijama confortável para dormir, Roupa íntima feminina de alta qualidade, Loja de lingerie online, Leggings de compressão para yoga, Top esportivo de secagem rápida, Conjunto de roupas de ginástica feminina, Roupas fitness plus size, Loja de moda esportiva online, Calça jeans skinny feminina, Jaqueta jeans vintage, Saia jeans com botões, Jeans de cintura alta para mulheres, Loja de moda jeans feminina, Biquíni de cintura alta, Maiô com estampa tropical, Saída de praia de crochê, Sunga feminina para natação, Loja de moda praia online">
     <title>The Way - Store</title>
+    <link rel="shortcut icon" href="src/image/icons/" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" media="(max-width: 480px) and (orientation: portrait)" href="src/css/style-mobile.css" />
     <link rel="stylesheet" media="(min-width: 481px)" href="src/css/style-none.css" />
@@ -56,7 +57,26 @@
     </div>
     <div id="content" style="display: none">
         <header>
-            <!--<div class="info-mkt"><i>Frete grátis para todo o Brasil!</i></div>-->
+            <div class="info-mkt">
+                <span class="scrolling-text">
+                    <img src="src/image/icons/atencao.png" class="alerta-info-mkt" alt="Ícone de Alerta" srcset="">
+                    <span class="scrolling-text1">A Black Friday já começou aqui na The Way - Store!</span>
+                    <img src="src/image/icons/atencao.png" class="alerta-info-mkt" alt="Ícone de Alerta" srcset="">
+                    <span class="scrolling-text1">A Black Friday já começou aqui na The Way - Store!</span>
+                    <img src="src/image/icons/atencao.png" class="alerta-info-mkt" alt="Ícone de Alerta" srcset="">
+                    <span class="scrolling-text1">A Black Friday já começou aqui na The Way - Store!</span>
+                    <img src="src/image/icons/atencao.png" class="alerta-info-mkt" alt="Ícone de Alerta" srcset="">
+                    <span class="scrolling-text1">A Black Friday já começou aqui na The Way - Store!</span>
+                    <img src="src/image/icons/atencao.png" class="alerta-info-mkt" alt="Ícone de Alerta" srcset="">
+                    <span class="scrolling-text1">A Black Friday já começou aqui na The Way - Store!</span>
+                    <img src="src/image/icons/atencao.png" class="alerta-info-mkt" alt="Ícone de Alerta" srcset="">
+                    <span class="scrolling-text1">A Black Friday já começou aqui na The Way - Store!</span>
+                    <img src="src/image/icons/atencao.png" class="alerta-info-mkt" alt="Ícone de Alerta" srcset="">
+                    <span class="scrolling-text1">A Black Friday já começou aqui na The Way - Store!</span>
+                    <img src="src/image/icons/atencao.png" class="alerta-info-mkt" alt="Ícone de Alerta" srcset="">
+                    <span class="scrolling-text1">A Black Friday já começou aqui na The Way - Store!</span>
+                </span>
+            </div>                          
             <div class="container-hamburg-logo">
                 <div class="container-hamburg">
                     <div class="hamburg-menu">
@@ -775,7 +795,7 @@
                                 e seja o 1º à receber promoções relâmpago!
                             </p>
                         </div>
-                        <form action="../backend/scripts/leads-register.php" method="post"></form>
+                        <form action="./backend/scripts/leads-register.php" method="post" id="leadForm">
                             <div class="footer-subscribe">
                                 <input type="text" name="nameInput" id="nameInput" placeholder="Nome completo">
                                 <input type="email" name="emailInput" id="emailInput" placeholder="Seu e-mail">
@@ -881,110 +901,52 @@
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script> <!-- end: Script que insere o ano nos direitos reservados no Footer -->
     
-    <script> // ini: Script que faz a validação do cadastro de e-mail e wpp
-        // Função para validar o formato de e-mail
-        function validarEmail(email) {
-            const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-            return regex.test(email);
-        }
-
-        // Função para validar o formato do número de WhatsApp brasileiro
-        function validarWhatsapp(whatsapp) {
-            const regex = /^\(\d{2}\)\s9\d{4}-\d{4}$/;
-            return regex.test(whatsapp);
-        }
-
-        // Referência para os inputs de e-mail e WhatsApp
-        const nameInput = document.getElementById('nameInput');
-        const emailInput = document.getElementById('emailInput');
-        const whatsappInput = document.getElementById('whatsappInput');
-        const errorMessage = document.getElementById('error-message');
-
-        // Adicione os estilos diretamente no JavaScript
-        nameInput.style.border = '1px solid transparent';
-        emailInput.style.border = '1px solid transparent';
-        whatsappInput.style.border = '1px solid transparent';
-        errorMessage.style.color = 'red';
-
-        // Event listener para verificar o e-mail e WhatsApp quando os campos perderem o foco
-        nameInput.addEventListener('blur', validarCampos);
-        emailInput.addEventListener('blur', validarCampos);
-        whatsappInput.addEventListener('blur', validarCampos);
-
-        function validarCampos() {
-            const name = nameInput.value;
-            const email = emailInput.value;
-            const whatsapp = whatsappInput.value;
-
-            let emailValido = validarEmail(email);
-            let whatsappValido = validarWhatsapp(whatsapp);
-
-            if (!nameValido || !emailValido || !whatsappValido) {
-                // Email ou WhatsApp inválido, aplicar estilo de erro
-                if (!nameValido) {
-                    nameInput.style.border = '1px solid red';
-                } else {
-                    nameInput.style.border = '1px solid transparent';
-                }
-
-                if (!emailValido) {
-                    emailInput.style.border = '1px solid red';
-                } else {
-                    emailInput.style.border = '1px solid transparent';
-                }
-
-                if (!whatsappValido) {
-                    whatsappInput.style.border = '1px solid red';
-                } else {
-                    whatsappInput.style.border = '1px solid transparent';
-                }
-
-                errorMessage.textContent = 'Por favor, insira um nome, e-mail e WhatsApp válidos.';
-            } else {
-                // Email e WhatsApp válidos, reverter estilo de erro
-                nameInput.style.border = '1px solid transparent';
-                emailInput.style.border = '1px solid transparent';
-                whatsappInput.style.border = '1px solid transparent';
-                errorMessage.textContent = '';
+    <script>
+        // Adicione um evento de escuta para o envio do formulário
+        document.getElementById("leadForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+    
+            // Obtenha os valores dos campos de entrada
+            var name = document.getElementById("nameInput").value;
+            var email = document.getElementById("emailInput").value;
+            var whatsapp = document.getElementById("whatsappInput").value;
+    
+            // Verifique se os campos obrigatórios estão preenchidos
+            if (name.trim() === "" || email.trim() === "" || whatsapp.trim() === "") {
+                document.getElementById("error-message").textContent = "Todos os campos são obrigatórios.";
+                return;
             }
-        }
-
-        // Event listener para reverter o estilo quando o usuário começa a editar novamente
-        nameInput.addEventListener('focus', limparErro);
-        emailInput.addEventListener('focus', limparErro);
-        whatsappInput.addEventListener('focus', limparErro);
-
-        function limparErro() {
-            nameInput.style.border = '1px solid #00a2d1';
-            emailInput.style.border = '1px solid #00a2d1';
-            whatsappInput.style.border = '1px solid #00a2d1';
-            errorMessage.textContent = '';
-        }
-
-        // Event listener para formatar e permitir um número completo de WhatsApp durante a digitação
-        whatsappInput.addEventListener('input', formatarELimitarWhatsapp);
-
-        function formatarELimitarWhatsapp() {
-            let inputValue = whatsappInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
-
-            if (inputValue.length > 0) {
-                if (inputValue.length <= 2) {
-                    inputValue = '(' + inputValue;
-                } else if (inputValue.length <= 7) {
-                    inputValue = '(' + inputValue.substring(0, 2) + ') ' + inputValue.substring(2);
-                } else {
-                    inputValue = '(' + inputValue.substring(0, 2) + ') ' + inputValue.substring(2, 7) + '-' + inputValue.substring(7, 11);
+    
+            // Envie o formulário usando AJAX
+            var formData = new FormData(this);
+            var xhr = new XMLHttpRequest();
+    
+            // Configure a solicitação AJAX
+            xhr.open("POST", "./backend/scripts/leads-register.php", true);
+            xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    
+            // Manipule a resposta AJAX
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 201) {
+                        // Exiba os valores inseridos no console
+                        console.log("Nome:", name);
+                        console.log("Email:", email);
+                        console.log("WhatsApp:", whatsapp);
+    
+                        document.getElementById("error-message").textContent = "Dados inseridos com sucesso.";
+                        document.getElementById("leadForm").reset(); // Limpe o formulário após o sucesso
+                    } else {
+                        document.getElementById("error-message").textContent = "Erro ao inserir dados no banco de dados.";
+                    }
                 }
-
-                if (inputValue.length > 15) {
-                    inputValue = inputValue.substring(0, 15); // Limita em 15 caracteres
-                }
-            }
-
-            whatsappInput.value = inputValue;
-        }
-    </script> <!-- end: Script que faz a validação do cadastro de e-mail e wpp -->
-
+            };
+    
+            // Envie os dados do formulário
+            xhr.send(formData);
+        });
+    </script>
+    
 
     <script src="src/js/scripts-mobile.js"></script>
 

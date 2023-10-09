@@ -1,7 +1,7 @@
 <?php
 // Configurações de conexão com o banco de dados
 $servername = "62.72.9.231";
-$username = "thewaystorebr";
+$username = "root";
 $password = "TWY99831@x";
 $dbname = "leads_ecommerce";
 
